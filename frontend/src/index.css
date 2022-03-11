@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 
@@ -41,6 +41,10 @@ h3 {
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+}
+
+.flex {
+  display: flex;
 }
 
 .header {
@@ -97,6 +101,7 @@ h3 {
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
+  flex-direction: column;
 }
 
 .goal .close {
@@ -108,10 +113,19 @@ h3 {
   background: none;
 }
 
+.goal-footer {
+  justify-content: space-evenly;
+  margin-top: auto;
+}
+
 .form,
 .content {
   width: 70%;
   margin: 0 auto;
+}
+
+.content {
+  padding-bottom: 48px;
 }
 
 .form-group {
@@ -167,6 +181,66 @@ h3 {
 
 .btn:hover {
   transform: scale(0.98);
+}
+
+.btn-icon {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon:hover {
+  transform: scale(0.95);
+}
+
+.btn-x {
+  width: 1.5rem;
+  margin-left: auto;
+  font-size: 0.8;
+  font-weight: 500;
+}
+
+.btn-danger {
+  background-color: rgb(200, 0, 0);
+}
+
+.btn-sucess {
+  background-color: rgb(17, 114, 17);
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(155, 155, 155, 0.7);
+}
+
+.modalContainer {
+  width: min(80%, 30rem);
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.modalFooter {
+  justify-content: space-evenly;
 }
 
 .loadingSpinnerContainer {
